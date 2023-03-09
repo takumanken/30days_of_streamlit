@@ -31,4 +31,4 @@ c = (
     .encode(x="a", y="b", size="c", color="c", tooltip=["a", "b", "c"])
 )
 st.write(c)
-st.write(df3)
+st.write(df2)
