@@ -1,0 +1,19 @@
+name: Format Python code with black
+
+on: [push, pull_request]
+
+jobs:
+  format:
+    name: Format code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+      - name: Install dependencies
+        run: pip install black
+      - name: Run Black
+        run: black .
