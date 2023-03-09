@@ -24,7 +24,7 @@ st.write("Below is a DataFrame:", df, "Above is a dataframe")
 
 # Example 5
 
-df2 = pd.DataFrame(np.random.randn(200, 30), columns=["a", "b", "c"])
+df2 = pd.DataFrame(np.random.randn(200, 3), columns=["a", "b", "c"])
 c = (
     alt.Chart(df2)
     .mark_circle()
